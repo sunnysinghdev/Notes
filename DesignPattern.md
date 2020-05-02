@@ -40,11 +40,12 @@ host of methods that they do not use. The purpose behind this is so that classes
 same interfaces only need to implement a specific set of methods as opposed to a monolithic interface
 of methods.
 ### Dependency Inversion Principle (DIP)
-The DIP is all about isolating your classes from concrete implementations and having them depend on
-abstract classes or interfaces. It promotes the mantra of coding to an interface rather than an implementation,
-which increases flexibility within a system by ensuring you are not tightly coupled to one
-implementation.
+The DIP is all about isolating your classes from concrete implementations and having them depend on abstract classes or interfaces. It promotes the mantra of coding to an interface rather than an implementation, which increases flexibility within a system by ensuring you are not tightly coupled to one implementation.
 
+>High-level modules should not depend on low-level modules. Both should depend on
+abstractions.
+
+>Abstractions should not depend on details. Details should depend on abstractions.
 ## Layered Architechture
 ![Clean Architecture](/images/LayeredArchitechture.png)
 
@@ -84,41 +85,42 @@ entities and value objects.
 The Application service is a thin layer that `sits above the domain model` and coordinates the application activity. It does not contain business logic and does not hold the state of any entities; however, it can `store the state of a business workflow transaction`. You use an Application service to provide an API into the domain model using the `Request-Reply messaging` pattern.
 ### Repository
 The Repository pattern `acts as an in-memory collection` or repository for business entities, completely abstracting away the underlying data infrastructure. This pattern allows you to keep your domain model free of any infrastructure concerns, making it `POCO` (*plain old common runtime object*) and `PI` (*persistent ignorance*).
-Layering
-Layering is an important concept in DDD because it helps to enforce the separation of concerns.
-Figure 4-7 shows a graphical representation of the layers and concepts that make up DDD; however,
-I should stress that DDD is much more about your mindset when developing complex business applications
-than how you set up your solution.
+### Layering
+It helps to enforce the separation of concerns.
+
+![layering](/images/DDDView.png)
+
+Sample view
+
+![layering](/images/DDDView.png)
 
 
+## Service Oriented Architecture
+Service oriented architecture (SOA) refers to the principles and practices of designing a set of loosely integrated services typically, but not always, for `distributed applications`. Services are basically core business functions that are used by one or many business applications.
 
+### Legacy Application
+![LegacyaApllication](/images/LegacyApplication.png)
 
+### SOA Application
+![SoaApllication](/images/LegacyApplication.png)
 
+### Four Tenants of SOA
+* Boundaries are explicit
+* Service are autonomous
+* Service Share common `Contract` and `Schema`, not `Class`
+* Service Compatibility Is Based on Policy (WS Policy)
 
+### Messaging Patterns:
+* Document Message
+* Request-Response
+* Reservation
+* Idempotent
 
+## Unit of Work
+The `Unit of Work` pattern is designed to maintain a list of business objects that have been changed by a business transaction, whether by adding, removing, or updating. The Unit of Work then coordinates the persistence of the changes and any concurrency problems flagged. The benefit of utilizing the Unit of Work in your DAL is to ensure data integrity; if an issue arises partway through persisting a series of business objects as part of a transaction, all changes should be rolled back to ensure that the data remains in a valid state.
+>Add a reference to `System.Transactions` so you can use the `TransactionScope`.
 
+# Data Concurrency Control
+There are two forms of concurrency control: `optimistic` and `pessimistic`. The optimistic concurrency option assumes that there are no issues with multiple users making changes simultaneously to the state of business objects, also known as last change wins. For some systems, this is perfectly reasonable behavior; however, when the state of your business objects needs to be consistent with the state when retrieved from the database, pessimistic concurrency is required.
 
-
-
-
-
-
-
-
-
-
-
-
-## Refrence book
->Test Driven Development: By Example by Kent Beck
-
->The Art of Unit Testing: With Examples in .NET by Roy Osherove
-
->Professional Enterprise .NET by Jon Arking and Scott Millett
-
->Domain-Driven Design: Tackling Complexity in the Heart of Software by Eric Evans
-
->Applying Domain-Driven Design and Patterns: With Examples in C# and .NET by Jimmy Nilsson
-
->.NET Domain-Driven Design with C#: Problem - Design - Solution by Tim 
-
+[Reference book](books.md)
