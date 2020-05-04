@@ -47,10 +47,10 @@ abstractions.
 
 >Abstractions should not depend on details. Details should depend on abstractions.
 ## Layered Architechture
-![Clean Architecture](/images/LayeredArchitechture.png)
+![Clean Architecture](images/LayeredArchitechture.png)
 
 ### Sequence Flow of Layered System
-![imagess](/images/SequenceFlowProduct.png)
+![imagess](images/SequenceFlowProduct.png)
 
 ## Fowler’s Patterns of Enterprise Application Architecture
 * Transaction Script
@@ -88,21 +88,21 @@ The Repository pattern `acts as an in-memory collection` or repository for busin
 ### Layering
 It helps to enforce the separation of concerns.
 
-![layering](/images/DDDView.png)
+![layering](images/DDDView.png)
 
 Sample view
 
-![layering](/images/DDDView.png)
+![layering](images/DDDView.png)
 
 
 ## Service Oriented Architecture
 Service oriented architecture (SOA) refers to the principles and practices of designing a set of loosely integrated services typically, but not always, for `distributed applications`. Services are basically core business functions that are used by one or many business applications.
 
 ### Legacy Application
-![LegacyaApllication](/images/LegacyApplication.png)
+![LegacyaApllication](images/LegacyApplication.png)
 
 ### SOA Application
-![SoaApllication](/images/LegacyApplication.png)
+![SoaApllication](images/LegacyApplication.png)
 
 ### Four Tenants of SOA
 * Boundaries are explicit
@@ -123,4 +123,4 @@ The `Unit of Work` pattern is designed to maintain a list of business objects th
 # Data Concurrency Control
 There are two forms of concurrency control: `optimistic` and `pessimistic`. The optimistic concurrency option assumes that there are no issues with multiple users making changes simultaneously to the state of business objects, also known as last change wins. For some systems, this is perfectly reasonable behavior; however, when the state of your business objects needs to be consistent with the state when retrieved from the database, pessimistic concurrency is required.
 
-[Reference book](books.md)
+[Reference book](books)

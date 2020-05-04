@@ -1,7 +1,7 @@
 # .NET Core web api
 
 ## .NET Ecosystem
-![dotnetecosystem](/images/DotNetecosystem.png)
+![dotnetecosystem](images/DotNetecosystem.png)
 
 ## ASP.NET Feature
 * Hosting
@@ -66,7 +66,7 @@ The model is then passed by the controller to a view, which has the responsibili
 ![image](images/MVCvsWebApi.png)
 
 ## Controller And Action
-![image](images/controllerandaction.png)
+![image](images/ControllerAndAction.png)
 
 ## Configuration Model
 
