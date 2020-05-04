@@ -2,18 +2,18 @@
 
 For link [sunnysinghdev](http://sunysinghdev.github.io) version 7.2.0.
 
-> ## [Linux Commands](/linuxcommand)
+> ## [Linux Commands](linuxcommand)
 
-> ## [Gravity](/gravity)
+> ## [Gravity](gravity)
 
-> ## [Design Pattern](/designpattern)
+> ## [Design Pattern](designpattern)
 
-> ## [.NET Core](/dotnetcore)
+> ## [.NET Core](dotnetcore)
 
-> ## [Node JS](/nodejs)
+> ## [Node JS](nodejs)
 
-> ## [Kubernetes](/kubernetes)
+> ## [Kubernetes](kubernetes)
 
-> ## [REST API](/restapi)
+> ## [REST API](restapi)
 
-> ## [Refrences](/books)
+> ## [Refrences](books)
