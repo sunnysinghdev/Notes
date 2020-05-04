@@ -10,7 +10,7 @@ LinuxCommands | Usage
 `chmod`  |
 `chown`  | change the owner and group owner of a file.
 `clear`  |
-`cut`    | slice data at character positions (and a simpler field based )`cp` or `cv`| copy or move
+`cut`    | slice data at character positions (and a simpler field based )`cp` or `cv` copy or move
 `composer`| handle php packages
 `ctags`   | Makes it easy to navigate large source code projects.Tagging your code enables editors like vi and Emacs to treat your code like hypertext. Each object in your code becomes hyperlinked to its definition.
 `diff`   | find the difference between two files.
@@ -87,12 +87,19 @@ LinuxCommands | Usage
 ## CHMOD File permissions
 
 >0: No permission
+
 >1: Execute permission
+
 >2: Write permission
+
 >3: Write and execute permissions
+
 >4: Read permission
+
 >5: Read and execute permissions
+
 >6: Read and write permissions
+
 >7: Read, write and execute permissions
 
 ## uname
@@ -125,7 +132,7 @@ The fourth line shows the total amount of physical memory, and how much is free,
 
 The fifth line shows the total amount of swap memory, and how much is free, used and available  (taking into account memory that is expected to be recoverable from caches).
 
-![imageProcess](/images/topcmd.png)
+![imageProcess](images/topcmd.png)
 
 
 ### The columns in the main display are made up of:
