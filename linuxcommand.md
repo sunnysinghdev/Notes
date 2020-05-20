@@ -20,7 +20,7 @@ LinuxCommands | Usage
 `du`     |
 `echo`   |
 `exit`   | close the terminal
-`free`   | `free -h` summary of memory usage.
+`free`   | `free -h` or `free -m` summary of memory usage.
 `find`   |
 `file`   | The file command is used to determine a file's type, regardless of its name.
 `fuser`  | fuser is a mnemonic for file user and tells you what processes have opened a given file. It is used to find which process is using a file, a directory or a socket. It also gives information about the user owning the process and the type of access. It can also send a signal to all those processes for you.
@@ -31,6 +31,7 @@ LinuxCommands | Usage
 `gcc`    | compiles multiple languages (C, C++, Objective-C, Ada, FORTRAN, and Java) to machine code.
 `gdb`    | GDB (GNU DeBugger), enables you to step through the execution of a program 
 `head`   | listing of the first 10 lines of a file
+`hostnamectl` | command Use hostnamectl command to query and change the system hostname and related settings. Just type the following command to check OS name and Linux kernel version.
 `history`| previously issued command.
 `htop`   | granted top is the basic command and htop is an add-on, but how better do you check running processes, memory, and cpu via command line?
 `ifconfig`|check/set your network interfaces
@@ -38,6 +39,9 @@ LinuxCommands | Usage
 `kill -9`|
 `logout` |
 `ls`     |
+`lscpu`  | The lscpu command reports information about the cpu and processing units.
+`lsusb`  | list usb buses and device details.
+`lshw`   | A general purpose utility, that reports detailed and brief information about multiple different hardware units such as cpu, memory disk, usb controllers, network adapters etc. Lshw extracts the information from different /proc files.
 `ln`     |
 `less`   | read big size files. Use left right arrow and page up and down press `Q` to quit. Use `/` to search forward in the file and use `?` to search backward.
 `locate` | quick searching of local disks?
@@ -58,6 +62,7 @@ LinuxCommands | Usage
 `pip`    | to install python packages
 `route`  | network routing
 `reboot`|
+`rpm`    | look for all software install `rpm -qa | less`
 `rm`     | remove file or `-R` remove folder 
 `stat`   | info about file
 `sort`   |
@@ -158,7 +163,9 @@ The fifth line shows the total amount of swap memory, and how much is free, used
 * Z: Zombie
 
 >Press the Q key to exit from top.
-
+## vi editor cmd
+![vicmd](images/vicmd.png)
+![vicmd2](images/vicmd2.png)
 ## Other things to know
 >`alias pf="ps -e | grep $1"` alias for geeting procees id
 
@@ -178,7 +185,7 @@ The fifth line shows the total amount of swap memory, and how much is free, used
 
 >`yes | command_or_script` Using yes command for commands or scripts that need interactive response
 
-`alias gerp=grep` provide alternate name for a command.
+>`alias gerp=grep` provide alternate name for a command.
 
 > Press `ctrl+Q` to unfreeze terminal, when `ctrl+S` get pressed
 
@@ -189,27 +196,31 @@ The fifth line shows the total amount of swap memory, and how much is free, used
 > the current directory, represented by the single `.` character.
 
 >`sudo su -` switch user to root 
- 
 
+>`ls la` show permission
 
-`ls la` show permission
+>`fdisk -l` *xvd*  hard drive format disk
 
-`fdisk -l` *xvd*  hard drive format disk
-`/etc/user` displays all group
-`/etc/passwd` User:/home/user: /bin/bash is a shell
-`grep bash /etc/paswwd` list all user having access to bash
-`id user`
-`visudo` 
-`less /etc/sudoers`
+>`/etc/user` displays all group
 
-`useradd vivek`
-`password ****`
+>`/etc/passwd` User:/home/user: /bin/bash is a shell
 
+>`grep bash /etc/paswwd` list all user having access to bash
 
-`vi /etc/ssh/sssd-config` 
-`service sshd restart`
+>`id user`
 
-`ssh-keygen -t rsa` creates public key private key
+>`visudo` 
+
+>`less /etc/sudoers`
+
+>`useradd vivek`
+>`password ****`
+
+>`vi /etc/ssh/sssd-config` 
+
+>`service sshd restart`
+
+>`ssh-keygen -t rsa` creates public key private key
 
 
   
