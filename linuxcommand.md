@@ -1,5 +1,87 @@
 # Linux Commands 
 
+## Linux service
+
+> `systemctl` to view list of services running
+
+> press `ctrl+c` to exit
+
+> `systemctl restart httpd.service` to restart service
+
+## Edit php.ini
+
+> go to root `cd /` (for home `cd ~`)
+
+> cd `etc`
+
+> `vi php.ini`
+
+> press `i` for inserting elements
+
+> press `Esc` for inserting
+
+> press `:wq` for saving and quiting 
+
+## Share Windows file to linux machine or Vice Versa
+
+### Install two packages
+
+> sudo apt-get install `smbclient` (use yum for centOS)
+
+> sudo apt-get install `samba` (use yum for centOS)
+
+> sudo apt-get install `cifs-utils`
+
+### Create mount dir for folder shared on windows
+
+> mkdir /mnt/sunny-win-share
+
+> mount -t cisf -o username=sunny.singh,password=ep //windowsserver/share-folder-name /mnt/sunny-win-share
+
+### Share Linux folder
+Edit smb.conf file
+> vi /etc/samba/smb.conf
+
+```
+[global]
+    workgroup = SAMBA
+    netbios name = myserver
+    security = user
+
+    passdb backend = tbdsam
+
+    ntlm auth = yes
+    lanman auth = no
+    client lanman auth = no
+    preferred masater = yes
+    wins support = yes
+    local master = yes
+    os level = 20
+    auto services = global
+
+[SunnyShare]
+    valid users = root
+    path = /samba/SunnyShare
+    writable = yes
+    browsable = yes
+```
+Save changes to conf file
+
+> chmod 777 /samba/SunnyShare
+
+> chcon -t samba_share_t -R /samba/SunnyShare (-R used for recursive file share)
+
+> smbpasswd -a root
+
+> testparm (test config file)
+
+> systemctl start smb.service (or restart)
+
+> firewall-cmd --permanent --add-service=samba
+
+> firewall-cmd --reload
+
+
 LinuxCommands | Usage
 --------| -----
 `awk`    | extract and transform data from field-delimited data using simple operators and regular expressions
