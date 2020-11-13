@@ -12,6 +12,8 @@ For link [sunnysinghdev](http://sunysinghdev.github.io) version 7.2.0.
 
 > ## [Node JS](nodejs)
 
+## [Node JS](python)
+
 > ## [Kubernetes](kubernetes)
 
 > ## [REST API](restapi)

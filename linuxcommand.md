@@ -1,5 +1,12 @@
 # Linux Commands 
 
+## Cron jobs
+> `crontab -e` (edit file)
+
+> `* * * * * echo "hello sunny" >> ~/logfile.log 2>&1` (format mm hh day_of_month month day_of_week)
+
+> tail /var/log/cron
+
 ## Linux service
 
 > `systemctl` to view list of services running
@@ -7,6 +14,10 @@
 > press `ctrl+c` to exit
 
 > `systemctl restart httpd.service` to restart service
+
+> systemctl list-units --type=service ( `| grep` svcname)
+
+> du -shc /folder/* (h - human readable, c - file size, s - subfolder)
 
 ## Edit php.ini
 
@@ -37,6 +48,10 @@
 > mkdir /mnt/sunny-win-share
 
 > mount -t cisf -o username=sunny.singh,password=ep //windowsserver/share-folder-name /mnt/sunny-win-share
+
+> vi /etc/mtab (view mount folders path)
+
+> `umount` //windowsserver/share-folder-name (check umount spell)
 
 ### Share Linux folder
 Edit smb.conf file
@@ -81,6 +96,11 @@ Save changes to conf file
 
 > firewall-cmd --reload
 
+## Firewall cmd
+
+> firewall-cmd --list-service
+
+> firewall-cmd --list-port
 
 LinuxCommands | Usage
 --------| -----
@@ -246,6 +266,9 @@ The fifth line shows the total amount of swap memory, and how much is free, used
 
 >Press the Q key to exit from top.
 ## vi editor cmd
+
+>`:$` (move to end of file)
+
 ![vicmd](images/vicmd.png)
 ![vicmd2](images/vicmd2.png)
 ## Other things to know
