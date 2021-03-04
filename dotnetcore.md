@@ -71,3 +71,6 @@ The model is then passed by the controller to a view, which has the responsibili
 ## Configuration Model
 
 >Don’t code hard, hardcode instead
+
+## Prevent Cross-Site Scripting (XSS) in ASP.NET Core
+>XSS vulnerabilities generally occur when an application takes user input and outputs it to a page without validating, encoding or escaping it.
