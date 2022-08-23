@@ -1,34 +1,36 @@
-Sunny Singh 
+# Sunny Singh 
 sunnysingh.vpcoe@gmail.com
-http://sunnysingh.in
+
+sunnysingh.in
+
 (+91) 7070956760
 
-Professional Summary
+## Professional Summary
 
 	Having 9+ years of experience as software developer.
 	Hands on in application development using, .NET, .NET Core, C#, Angular 6-8, PHP, Python, NodeJS, Elastic Search, Wix Toolset, Docker.
 	Extensive experience in design and development of Mobile, Desktop and Web applications
 	Experience with software versioning control tool Git, SVN, Redmine, Bugzilla and VSS.
 
-Career & Academic Profile
+## Career & Academic Profile
 
 	(2021 – 2022) Senior Software Engineer Morgan Stanley.
 	(2016 – 2021) Senior Software Developer Epicor Software.
-	(2013 – 2016) Software Developer i-exceed technology .
+	(2013 – 2016) Software Developer i-exceed technology.
 	(2009 - 2013) Bachelor of Engineering (IT), Pune University, Vidya Prathisthan College of Engineering, Pune.
 	(2006 - 2008) Class 12th, CBSE Board, DAV Khagaul, Patna.
 	(1996 - 2006) Class 10th, CBSE Board, Delhi Model Public School, Patna.
 
-Work & Experience
+## Work & Experience
 
-    Software Asset management
+### Software Asset management
         Description: SAM manages company’s software asset through web portal. This was a silverlight application so we were supposed to migrate it to angular web apllication using Angular and .NET core web API.
         Client: Morgan Stanley
         Team Size: 12
         Role: Senior Software Developer
         Technology: .NET Core 3.1, C#, Angular 8, WebAPI 2, Bitbucket, VSCode, SqlServer, AZURE
 
-    BisTrack Journey Planner
+### BisTrack Journey Planner
         Description Bistrack Journey planner helps customer to schedule their vehicle, carrying various products, based on availability of vehicle type and driver along with its trailer type. This was designed in 2-tier architecture. Our job was to make sure it can be converted to 3-tier and can be deployed to cloud platform like Azure.
 
         Client Epicor Software Corporation
