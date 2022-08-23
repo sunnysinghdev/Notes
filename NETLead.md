@@ -1,20 +1,37 @@
-.NET Lead Technical LeadSquared
+# .NET Lead Technical
 
-New Relic - optimize web application performance
+## New Relic - optimize web application performance
  
 
-Strong expertise in SQL programming, 
+## Strong expertise in SQL programming, 
 	writing & optimizing queries that 
 	access/process millions of records
+[SQL Notes](sql)
 	
-IIS configuration
+## IIS configuration
+	NA
 
- Build and Release, Agile processes, and Estimation/Planning
- 
-SaaS platform 
+## Build and Release, Agile processes, Estimation/Planning
+### Scrum
+	Scrum planned cannot be reverted
+### XP Xtreme programming
+	Priortize with shorter release cycle (Redmine)
+### Kanban
+	Visual of workflow
+### Lean
+	NA
+### Pair programming
+	Two developers works at one computer
+## Cloud
+![imagess](images/saas-pass-iaas.png)
+
+### IaaS
 	Servers, 
 	storage, and 
-	networking 
+	networking
+	E.g - AWS, AZURE 
+### SaaS platform 
+	
 	 
 	Automatic data backups are built into the SaaS architecture.\
 	vendor manages all backend infrastructure

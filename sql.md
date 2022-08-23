@@ -36,3 +36,7 @@ and W.WORKER_ID != W1.WORKER_ID;
 ## the last record from a table.
 
 > Select * from Worker where WORKER_ID = (SELECT max(WORKER_ID) from Worker);
+
+## Execution Plans
+    An execution plan provides a graphical representation of how the query optimizer chose to execute a query
+[See Optimization technique](https://www.sqlshack.com/query-optimization-techniques-in-sql-server-the-basics/)
