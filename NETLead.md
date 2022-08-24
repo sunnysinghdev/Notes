@@ -38,3 +38,4 @@
 	do not have to build additional tools to ensure compliance.
 	SaaS architecture components are built for scalability. 
 	Updating application is easy
+        Atlassian saas design ![watch on youtube](https://youtu.be/0N4KknY_zdU)
