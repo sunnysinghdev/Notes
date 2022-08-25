@@ -3,24 +3,33 @@ For link [sunnysinghdev](http://sunysinghdev.github.io) version 7.2.0.
 
 > ## [AI](ai)
 
-> ## [Linux Commands](linuxcommand)
-
-> ## [Gravity](gravity)
+> ## [books](books)
 
 > ## [Design Pattern](designpattern)
 
-> ## [.NET Core](dotnetcore)
+> ## [Docker](docker)
+
+> ## [dotnetcore](dotnetcore)
+
+> ## [English](english)
+
+> ## [Gitcmd](gitcmd)
+
+> ## [Gravity](gravity)
+
+> ## [Kubernetes](kubernetes)
+
+> ## [Linux Commands](linuxcommand)
+
+> ## [NET Lead](NETLead)
 
 > ## [Node JS](nodejs)
 
 > ## [Python](python)
 
-> ## [Kubernetes](kubernetes)
-
 > ## [REST API](restapi)
 
-> ## [Refrences](books)
+> ## [Resume](resume)
 
 > ## [SQL](sql)
 
-> ## [Resume](resume)
