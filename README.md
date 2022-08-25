@@ -1,6 +1,7 @@
-# Reade Notes typing skill
-
+# Read Notes 
 For link [sunnysinghdev](http://sunysinghdev.github.io) version 7.2.0.
+
+> ## [AI](ai)
 
 > ## [Linux Commands](linuxcommand)
 
@@ -12,7 +13,7 @@ For link [sunnysinghdev](http://sunysinghdev.github.io) version 7.2.0.
 
 > ## [Node JS](nodejs)
 
-## [Node JS](python)
+> ## [Python](python)
 
 > ## [Kubernetes](kubernetes)
 
@@ -21,3 +22,5 @@ For link [sunnysinghdev](http://sunysinghdev.github.io) version 7.2.0.
 > ## [Refrences](books)
 
 > ## [SQL](sql)
+
+> ## [Resume](resume)
