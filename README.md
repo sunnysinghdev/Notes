@@ -25,6 +25,8 @@ For link [sunnysinghdev](http://sunysinghdev.github.io) version 7.2.0.
 
 > ## [Node JS](nodejs)
 
+> ## [Product Management](pm)
+
 > ## [Python](python)
 
 > ## [REST API](restapi)
